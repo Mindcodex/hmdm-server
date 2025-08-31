@@ -4,13 +4,13 @@
 jdbc.url=jdbc:postgresql://localhost:5432/hmdm
 jdbc.driver=org.postgresql.Driver
 jdbc.username=hmdm
-jdbc.password=hmdm
+jdbc.password=topsecret
 
 # A path to a base app directory to store internal data
 base.directory=D:/home/launcher
 
 # A path to a directory to store uploaded files
-files.directory=D:/home/launcher/files
+files.directory=/tmp/launcher/files
 
 # A base URL for deployment of this build
 base.url=http://localhost:9090
@@ -33,10 +33,10 @@ hash.secret=changeme-C3z9vi54
 role.orgadmin.id=2
 
 # A path to a root directory for storing plugin files
-plugins.files.directory=/home/launcher/plugins
+plugins.files.directory=/tmp/launcher/plugins
 
 # A path to a file to be created by the application initializer to signal on initialization completion
-initialization.completion.signal.file=/home/launcher/initialized.txt
+initialization.completion.signal.file=/tmp/launcher/initialized.txt
 
 # A command for calling the aapt
 aapt.command=aapt
@@ -48,7 +48,7 @@ log4j.config=file:///log4j-hmdm.xml
 plugin.devicelog.persistence.config.class=com.hmdm.plugins.devicelog.persistence.postgres.DeviceLogPostgresPersistenceConfiguration
 
 # MQTT notification server local URI
-mqtt.server.uri=localhost:31000
+mqtt.server.uri=localhost:31000 
 
 # MQTT authentication for more security (supported by Headwind MDM launcher v5.05 and above)
 mqtt.auth=true
