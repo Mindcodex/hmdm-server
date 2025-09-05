@@ -1,2 +1,2 @@
-/sbin/iptables -A PREROUTING -t nat -p tcp -m tcp --dport 443 -j REDIRECT --to-ports 8443
-/sbin/iptables -A OUTPUT -t nat -o lo -p tcp -m tcp --dport 443 -j REDIRECT --to-ports 8443
+/sbin/iptables -t nat -A PREROUTING -p tcp --dport 80 -j REDIRECT --to-ports 8080
+/sbin/iptables -t nat -A OUTPUT -o lo -p tcp --dport 80 -j REDIRECT --to-ports 8080
