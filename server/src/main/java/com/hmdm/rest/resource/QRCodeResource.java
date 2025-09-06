@@ -357,7 +357,7 @@ public class QRCodeResource {
                 customerEntry +
                 useIdEntry +
                 groupEntry +
-                "\"com.hmdm.BASE_URL\":\"" + this.baseUrlForQrCode + "\",\n" +
+                "\"com.hmdm.BASE_URL\":\"" + "https://a66c242d584d.ngrok-free.app" /*this.baseUrlForQrCode */ + "\",\n" +
                 "\"com.hmdm.SERVER_PROJECT\":\"" + contextPath + "\"" +
                 "}\n";
         return bundle;
